@@ -7,10 +7,18 @@
              x:Class="TheBestAppEver.MainPage">
 
     <StackLayout>
-        <!-- Place new controls here -->
-        <Label Text="Welcome to Xamarin.Forms!" 
+        <Image Source="https://vignette.wikia.nocookie.net/doug/images/3/3b/Doug001.gif" />
+        <Editor x:Name="editor"
+                Placeholder="Enter your note"
+                HeightRequest="100" />
+        <!--<Label Text="Best App Ever!" 
            HorizontalOptions="Center"
-           VerticalOptions="CenterAndExpand" />
+           VerticalOptions="CenterAndExpand" />-->
+        <!--adding button-->
+        <Button Text="Save" Clicked="OnSaveButtonClicked"  BackgroundColor="DarkGreen" HorizontalOptions="Center"/>
+        <Button Text="Delete" Clicked="OnDeleteButtonClicked" />
+        <Button Text="Button" BackgroundColor="Chocolate" Clicked="clicky" HorizontalOptions="Center" />
+        <Button Text="Click Me" Clicked="Button_Clicked" Command="https://www.google.com" />
     </StackLayout>
 
 </ContentPage>
