@@ -10,3 +10,9 @@ The user will be able to manouver around the 3d image.
 
 ### Other Info
 This is just a proof on concept. Working app will take a lot more time
+
+### Sources:
+-https://www.xamarinarkit.com/lesson/prerequisites/
+-https://www.xamarinarkit.com/lesson/create-blank-scene/
+-https://www.xamarinarkit.com/
+-https://github.com/leeenglestone/xamarin-docs
