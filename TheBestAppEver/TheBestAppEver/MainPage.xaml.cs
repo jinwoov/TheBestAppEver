@@ -38,25 +38,18 @@ namespace TheBestAppEver
         }
 
         int count = 0;
-        public void Button_Clicked(object sender, System.EventArgs e, Command<string> url)
+        public async void Button_Clicked(object sender, System.EventArgs e)
         {
             count++;
             ((Button)sender).Text = $"You clicked {count} times.";
-            Launcher.OpenAsync(url.ToString());
+            await Launcher.TryOpenAsync(new Uri("https://human.biodigital.com/gar/anatomy/male/digestive-system/"));
         }
-        int counter = 0;
-        public void clicky(object sender, EventArgs e)
-        {
-            counter++;
 
-            if (counter % 2 == 0)
-            {
-                ((Button)sender).BackgroundColor = Color.Red;
-            }
-            else
-            {
-                ((Button)sender).BackgroundColor = Color.Green;
-            }
+
+        int counter = 0;
+        public async void clicky(object sender, EventArgs e)
+        {
+            await Launcher.OpenAsync(new Uri("https://human.biodigital.com/gar/anatomy/male/digestive-system/"));
         }
     }
 }

@@ -8,6 +8,7 @@
 
     <StackLayout>
         <Image Source="https://vignette.wikia.nocookie.net/doug/images/3/3b/Doug001.gif" />
+        <Button Text="Who is Doug?" BackgroundColor="Beige" Clicked="clicky" HorizontalOptions="Center" VerticalOptions="Start"/>
         <Editor x:Name="editor"
                 Placeholder="Enter your note"
                 HeightRequest="100" />
@@ -17,8 +18,8 @@
         <!--adding button-->
         <Button Text="Save" Clicked="OnSaveButtonClicked"  BackgroundColor="DarkGreen" HorizontalOptions="Center"/>
         <Button Text="Delete" Clicked="OnDeleteButtonClicked" />
-        <Button Text="Button" BackgroundColor="Chocolate" Clicked="clicky" HorizontalOptions="Center" />
-        <Button Text="Click Me" Clicked="Button_Clicked" Command="https://www.google.com" />
+        
+        <Button Text="Click Me" Clicked="Button_Clicked" />
     </StackLayout>
 
 </ContentPage>
